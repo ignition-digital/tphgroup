@@ -1,0 +1,108 @@
+<!-- home6-footer-top-area start -->
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    background-color: #1ebe5d;
+    text-decoration: none;
+    color: white;
+  }
+</style>
+
+<a
+  href="https://wa.me/60383251966"
+  class="whatsapp-float"
+  target="_blank"
+  title="Chat with us on WhatsApp"
+>
+  <i class="fa fa-whatsapp"></i>
+</a>
+<div class="footer-top-area">
+  <div class="container-fluid">
+    <div class="footer-content ptb-40">
+      <img src="assets/images/footer-logo.webp" alt="" style="opacity: 0.1" />
+      <p>Your Safety, Our Priority — Trusted Protection.</p>
+      <div class="social-button mt-50">
+        <a href="https://www.facebook.com/proguardmalaysia" target="_blank"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@proguardsecurityservicesma7883"
+          target="_blank"
+          ><i class="fa fa-youtube-play" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="payment mt-30">
+        <div class="logo-row">
+          <img src="assets/images/logo/crest.png" />
+          <img src="assets/images/logo/hrdf.png" />
+          <img src="assets/images/logo/jpn.png" />
+          <img src="assets/images/logo/kdn.png" />
+          <img src="assets/images/logo/kwm.png" />
+          <img src="assets/images/logo/kwsp.png" />
+          <img src="assets/images/logo/perkeso.png" />
+          <img src="assets/images/logo/pikm.png" />
+          <img src="assets/images/logo/rela.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- home6-footer-top-area end -->
+<!-- home6-footer-banner-area start -->
+<div class="container-fluid">
+  <div class="footer-banner overlay">
+    <a href="#"><img src="assets/images/bottom-banner/1.webp" alt="" /></a>
+    <a href="#"><img src="assets/images/bottom-banner/2.webp" alt="" /></a>
+    <a href="#"><img src="assets/images/bottom-banner/3.webp" alt="" /></a>
+    <a href="#"><img src="assets/images/bottom-banner/4.webp" alt="" /></a>
+  </div>
+</div>
+<!-- home6-footer-banner-area end -->
+<!-- home6-footer-bottom-area start -->
+<div class="container-fluid">
+  <div class="footer-bottom-area ptb-25">
+    <p>
+      © <span id="current-year"></span> Proguard Security Services (M) Sdn Bhd.
+      All rights reserved.
+    </p>
+  </div>
+</div>
+<!-- home6-footer-bottom-area end -->
+
+<script>
+  document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+</script>
+
+<style>
+  .logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* space between logos */
+    padding: 20px;
+    flex-wrap: wrap; /* wrap on small screens */
+  }
+  .logo-row img {
+    height: 35px; /* adjust as needed */
+    object-fit: contain;
+  }
+</style>
