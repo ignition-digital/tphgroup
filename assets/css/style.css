@@ -51,7 +51,7 @@
 /*----------------------------*/
 /*  1. Template default css
 /*----------------------------*/
-@import "css";
+/* @import "css"; */
 html,
 body {
   height: 100%;
@@ -2404,7 +2404,7 @@ img.second {
 .home6-service-bg {
   background: rgba(0, 0, 0, 0) url("../images/accessories-bg.webp") no-repeat
     scroll center center / cover;
-  min-height: 450px;
+  min-height: 400px;
 }
 .home6-service-single {
   border: 1px solid #868483;
