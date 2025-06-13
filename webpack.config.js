@@ -31,6 +31,9 @@ const pages = [
   { name: "key-project", template: "./src/key-project.html" },
   { name: "our-training", template: "./src/our-training.html" },
   { name: "who-we-are", template: "./src/who-we-are.html" },
+  { name: "company-information", template: "./src/company-information.html" },
+  { name: "board-of-directors", template: "./src/board-of-directors.html" },
+  { name: "objective", template: "./src/objective.html" },
 ];
 
 const htmlPlugins = pages.map(
