@@ -73,9 +73,8 @@ module.exports = {
   },
   mode: "production",
   performance: {
-    maxAssetSize: 2512000, // 3 MiB
+    maxAssetSize: 2512000,
   },
-
   devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),
