@@ -1,0 +1,1 @@
+const CACHE_NAME="v1",urlsToCache=["/index.html","/manifest.json"];self.addEventListener("install",(e=>{e.waitUntil(caches.open("v1").then((e=>e.addAll(urlsToCache))))})),self.addEventListener("fetch",(e=>{e.respondWith(caches.match(e.request).then((t=>t||fetch(e.request))))}));
