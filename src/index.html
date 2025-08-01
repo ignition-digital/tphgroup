@@ -1,485 +1,157 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <title>Proguard Security Services</title>
-    <%= htmlWebpackPlugin.options.templateParameters.commonHead %>
-
-    <style>
-      .service-first {
-        background-color: white; /* white background */
-        border-radius: 50%; /* make it round */
-        padding: 4px; /* spacing between image and border */
-      }
-    </style>
-  </head>
-  <body id="no-bg">
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
-    <!-- site content here -->
-    <div class="page-inner">
-      <%= htmlWebpackPlugin.options.navbar %>
-
-      <!-- home6-slider-area start -->
-      <div class="container-fluid">
-        <div class="slider-area xs-mb-20">
-          <div class="slider-container">
-            <!-- Slider Image -->
-            <div id="mainSlider" class="nivoSlider slider-image">
-              <img
-                src="assets/images/slider/11.webp"
-                alt="main slider"
-                title="#htmlcaption1"
-              />
-              <img
-                src="assets/images/slider/12.webp"
-                alt="main slider"
-                title="#htmlcaption2"
-              />
-            </div>
-            <!-- Slider Caption 1 -->
-            <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
-              <div class="slider-progress"></div>
-              <div class="slide1-text hidden-xs">
-                <div class="middle-text">
-                  <div
-                    class="cap-title wow fadeInUp"
-                    data-wow-duration="1.2s"
-                    data-wow-delay="0s"
-                  ></div>
-                  <div
-                    class="cap-dec wow fadeInUp"
-                    data-wow-duration="0.9s"
-                    data-wow-delay="0.3s"
-                  ></div>
-                  <div
-                    class="cap-title wow fadeInUp"
-                    data-wow-duration="1.2s"
-                    data-wow-delay="0.6s"
-                  ></div>
-                  <div
-                    class="cap-readmore wow fadeInUp"
-                    data-wow-duration="1.3s"
-                    data-wow-delay="0.9s"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <!-- Slider Caption 2 -->
-            <div id="htmlcaption2" class="nivo-html-caption slider-caption-2">
-              <div class="slider-progress"></div>
-              <div class="slide2-text hidden-xs">
-                <div class="middle-text">
-                  <div
-                    class="cap-title wow fadeInUp"
-                    data-wow-duration="1.2s"
-                    data-wow-delay="0s"
-                  ></div>
-                  <div
-                    class="cap-dec wow fadeInUp"
-                    data-wow-duration="0.9s"
-                    data-wow-delay="0.3s"
-                  ></div>
-                  <div
-                    class="cap-title wow fadeInUp"
-                    data-wow-duration="1.2s"
-                    data-wow-delay="0.6s"
-                  ></div>
-                  <div
-                    class="cap-readmore wow fadeInUp"
-                    data-wow-duration="1.3s"
-                    data-wow-delay="0.9s"
-                  ></div>
-                </div>
-              </div>
-            </div>
+<div class="rts-banner-accountent-two rts-section-gap bg_image" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="banner-accountent-content">
+          <h1 class="title">Build. Ignite. Inspire.</h1>
+          <p class="disc">
+            From landmark developments to spectacular displays — we create
+            spaces and experiences that leave a lasting impact.
+          </p>
+          <div class="button-wrapper">
+            <a href="#" class="rts-btn btn-primary">About Us</a>
+            <a href="#" class="rts-btn btn-primary btn-border">Our Business</a>
           </div>
         </div>
       </div>
-      <!-- home6-slider-area end -->
-      <!-- home6-banner-top start -->
-      <div class="home6-banner-top pt-85 md-pt-55 sm-pt-30 small-pt-30">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="left-banner">
-                <div class="home6-banner-wraper mb-22">
-                  <a href="services.html">
-                    <img
-                      class="first"
-                      src="assets/images/banner/1.webp"
-                      alt=""
-                    />
-                    <img
-                      class="second"
-                      src="assets/images/banner/1-1.webp"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="home6-banner-wraper xs-mb-22">
-                  <a href="license.html">
-                    <img
-                      class="first"
-                      src="assets/images/banner/2.webp"
-                      alt=""
-                    />
-                    <img
-                      class="second"
-                      src="assets/images/banner/2-2.webp"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="right-banner">
-                <div class="home6-banner-wraper mb-22">
-                  <a href="who-we-are.html">
-                    <img
-                      class="first"
-                      src="assets/images/banner/3.webp"
-                      alt=""
-                    />
-                    <img
-                      class="second"
-                      src="assets/images/banner/3-3.webp"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="home6-banner-wraper">
-                  <a href="our-training.html">
-                    <img
-                      class="first"
-                      src="assets/images/banner/4.webp"
-                      alt=""
-                    />
-                    <img
-                      class="second"
-                      src="assets/images/banner/4-4.webp"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- home6-banner-top end -->
-      <!-- home6-service-area start -->
-      <div class="home6-service-area ptb-85 md-ptb-55 small-ptb-30">
-        <div class="container-fluid">
-          <div class="home6-service-bg">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <a href="about-us.html">
-                  <div class="home6-service-single m-left">
-                    <img
-                      class="service-first"
-                      src="assets/images/service/1.webp"
-                      alt=""
-                    />
-                    <img
-                      class="service-second"
-                      src="assets/images/service/1-1.webp"
-                      alt=""
-                    />
-                    <div class="text mt-40">
-                      <h3>About Us</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <a href="contact-us.html">
-                  <div class="home6-service-single sm-mr-20">
-                    <img
-                      class="service-first"
-                      src="assets/images/service/2.webp"
-                      alt=""
-                    />
-                    <img
-                      class="service-second"
-                      src="assets/images/service/2-2.webp"
-                      alt=""
-                    />
-                    <div class="text mt-40">
-                      <h3>Contact Us</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <a href="join-us.html">
-                  <div class="home6-service-single sm-ml-20">
-                    <img
-                      class="service-first"
-                      src="assets/images/service/3.webp"
-                      alt=""
-                    />
-                    <img
-                      class="service-second"
-                      src="assets/images/service/3-3.webp"
-                      alt=""
-                    />
-                    <div class="text mt-40">
-                      <h3>Join Us</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <a href="services.html">
-                  <div class="home6-service-single m-right">
-                    <img
-                      class="service-first"
-                      src="assets/images/service/4.webp"
-                      alt=""
-                    />
-                    <img
-                      class="service-second"
-                      src="assets/images/service/4-4.webp"
-                      alt=""
-                    />
-                    <div class="text mt-40">
-                      <h3>Our Services</h3>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- home6-service-area end -->
-      <!-- home6-feature-area start -->
-      <div class="feature-area">
-        <div class="container-fluid">
-          <div class="container">
-            <div class="section-title">
-              <h3>Our Services</h3>
-              <p>Trusted & vigilant.</p>
-            </div>
-          </div>
-          <div class="coustom-row">
-            <div class="home2-feature-carosel carosel-control">
-              <div class="coustom-col">
-                <div class="single-item">
-                  <div class="product-img">
-                    <a href="static-guard.html"
-                      ><img src="assets/images/feature/1.webp" alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <a href="#"><h5>Static Guard</h5></a>
-                  </div>
-                </div>
-              </div>
-              <div class="coustom-col">
-                <div class="single-item">
-                  <div class="product-img">
-                    <a href="armed-guard.html"
-                      ><img src="assets/images/feature/2.webp" alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <a href="#"><h5>Armed Guard</h5></a>
-                  </div>
-                </div>
-              </div>
-              <div class="coustom-col">
-                <div class="single-item">
-                  <div class="product-img">
-                    <a href="vip-bodyguard.html"
-                      ><img src="assets/images/feature/3.webp" alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <a href="#"><h5>VIP Bodyguard / Car Rental</h5></a>
-                  </div>
-                </div>
-              </div>
-              <div class="coustom-col">
-                <div class="single-item">
-                  <div class="product-img">
-                    <a href="event-crowd-control.html"
-                      ><img src="assets/images/feature/4.webp" alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <a href="#"><h5>Event / Crowd Control</h5></a>
-                  </div>
-                </div>
-              </div>
-              <div class="coustom-col">
-                <div class="single-item">
-                  <div class="product-img">
-                    <a href="security-escort-service.html"
-                      ><img src="assets/images/feature/5.webp" alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <a href="security-escort-service.html"
-                      ><h5>Security Escort Service</h5></a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="coustom-col">
-                <div class="single-item">
-                  <div class="product-img">
-                    <a href="vehicle-patrol.html"
-                      ><img src="assets/images/feature/6.webp" alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <a href="vehicle-patrol.html"><h5>Vehicle Patrol</h5></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- home6-feature-area end -->
-
-      <!-- home6-testimonial-area start -->
-      <div class="testimonial-area">
-        <div class="container-fluid">
-          <div class="testi-bg ptb-90 md-ptb-50 small-ptb-30">
-            <div class="container">
-              <div class="section-title">
-                <h3>What people say</h3>
-                <p>Testimonials</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="testimonial-carousel carosel-control-2">
-                <div class="col-lg-12">
-                  <div class="single-testimonial">
-                    <p>
-                      Professionalism in how to do, what & when to do and doing
-                      it!!
-                    </p>
-                    <h3>Tyrepro Msia</h3>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="single-testimonial">
-                    <p>
-                      Dedication, discipline, and a strong sense of duty —
-                      Proguard delivers security with true professionalism!
-                    </p>
-                    <h3>Sivam Bob</h3>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="single-testimonial">
-                    <p>Positive, Professionalism</p>
-                    <h3>Haiqal Hamid</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- home6-testimonial-area end -->
-
-      <!-- home6-newsletter-area start -->
-      <div class="newsletter-area ptb-85 md-ptb-55 small-ptb-30">
-        <div class="container">
-          <div class="section-title">
-            <h3>Our Clients</h3>
-          </div>
-
-          <section class="gov-logo-banner mt-50">
-            <div class="logo-row-client">
-              <style>
-                .gov-logo-banner {
-                  padding: 20px 0;
-                }
-
-                .logo-row-client {
-                  display: flex;
-                  flex-wrap: wrap;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 30px; /* space between logos */
-                  max-width: 1200px;
-                  margin: 0 auto;
-                  padding: 0 20px;
-                }
-
-                .logo-row-client img {
-                  height: 50px;
-                  object-fit: contain;
-                  transition: transform 0.3s ease;
-                }
-
-                .logo-row-client img:hover {
-                  transform: scale(1.05);
-                }
-              </style>
-              <img src="assets/images/logo/kpm.png" />
-              <img src="assets/images/logo/msn.png" />
-              <img src="assets/images/logo/jkkn.png" />
-              <img src="assets/images/logo/ksm.png" />
-              <img src="assets/images/logo/lhdn.png" />
-              <img src="assets/images/logo/moa.png" />
-              <img src="assets/images/logo/kkm.png" />
-              <img src="assets/images/logo/kbs.png" />
-              <img src="assets/images/logo/kpdnkk.png" />
-
-              <img src="assets/images/logo/tm.png" />
-              <img src="assets/images/logo/ioi.png" />
-              <img src="assets/images/logo/sharp.png" />
-              <img src="assets/images/logo/rgt.png" />
-              <img src="assets/images/logo/tasco.png" />
-              <img src="assets/images/logo/sirim.png" />
-              <img src="assets/images/logo/vox.png" />
-              <img src="assets/images/logo/jt.png" />
-              <img src="assets/images/logo/klinik.png" />
-              <img src="assets/images/logo/hup.png" />
-              <img src="assets/images/logo/ssf.png" />
-            </div>
-          </section>
-        </div>
-      </div>
-      <!-- home6-newsletter-area end -->
-
-      <%= htmlWebpackPlugin.options.footer %>
     </div>
+  </div>
+</div>
 
-    <!-- JS
-    ============================================ -->
+<!-- rts service area start -->
+<div class="rts-service-area rts-section-gap" id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-style-five center">
+          <span class="pre">Key Business Lines</span>
+          <h2 class="title">Our Business</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5 mt--10">
+      <div
+        class="col-lg-6"
+        data-animation="fadeInUp"
+        data-delay="0.0"
+        data-duration="1.2"
+      >
+        <div class="single-service-nine bg_image">
+          <h3 class="title">Property Development</h3>
+          <a href="https://www.goldeneraworld.com" class="icon">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        class="col-lg-6"
+        data-animation="fadeInUp"
+        data-delay="0.2"
+        data-duration="1.2"
+      >
+        <div class="single-service-nine two bg_image">
+          <h3 class="title">Pyrotechnics Wholesaler</h3>
+          <a href="https://www.pyrotechnicsfireworks.com" class="icon">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- rts service area end -->
 
-    <!-- Modernizer & jQuery JS -->
-    <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<div class="rts-trusted-client rts-section-gapBottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="title-area-client-client text-center">
+          <p class="client-title">Our Trusted Clients</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt--65">
+      <div class="col-lg-12">
+        <div class="client-three-wrapper">
+          <div class="single">
+            <img src="assets/images/brand/01.webp" alt="Business_client" />
+          </div>
+          <div class="single">
+            <img src="assets/images/brand/02.webp" alt="Business_client" />
+          </div>
+          <div class="single">
+            <img src="assets/images/brand/03.webp" alt="Business_client" />
+          </div>
+          <div class="single">
+            <img src="assets/images/brand/04.webp" alt="Business_client" />
+          </div>
+          <div class="single">
+            <img src="assets/images/brand/05.webp" alt="Business_client" />
+          </div>
+          <div class="single">
+            <img src="assets/images/brand/06.webp" alt="Business_client" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins JS -->
-    <script src="assets/js/jquery.nivo.slider.pack.js"></script>
-    <script src="assets/js/nivo-active.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/TimeCircles.js"></script>
-    <script src="assets/js/venobox.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.js"></script>
-    <script src="assets/js/jquery.scrollUp.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+<!-- why chgoose us section start -->
+<div class="why-chooseus-area rts-section-gapBottom" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 pr--30">
+        <div class="thumbnail-accountent-why-choose style-two">
+          <img src="assets/images/why-choose/12.webp" alt="why-chooseus-area" />
+          <div class="counter-about-area">
+            <h2 class="counter title">
+              <span class="odometer" data-count="25">00</span>+
+            </h2>
+            <span>Year of experience</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-6 pl--50 pl_sm--10 mt_md--50 mt_sm--50 pb_md--50 pb_sm--40"
+      >
+        <div class="why-choose-8-wrapper-content">
+          <div class="title-style-five mb--40">
+            <span class="pre">WHY CHOOSE US</span>
+            <h2 class="title rts-text-anime-style-1">
+              We know how to manage business globally
+            </h2>
+          </div>
+          <div class="single-feature-service-wrapper-8">
+            <div class="icon">
+              <img src="assets/images/why-choose/icons/08.svg" alt="service" />
+            </div>
+            <div class="inner-wrapper">
+              <h4 class="title">Always On Time</h4>
+              <p class="disc">
+                Fusce condimentum mattis placerat odio donec lacus porta
+                torquent, mauris gravida rutrum
+              </p>
+            </div>
+          </div>
+          <div class="single-feature-service-wrapper-8">
+            <div class="icon">
+              <img src="assets/images/why-choose/icons/09.svg" alt="service" />
+            </div>
+            <div class="inner-wrapper">
+              <h4 class="title">24/7 Customer Support</h4>
+              <p class="disc">
+                Fusce condimentum mattis placerat odio donec lacus porta
+                torquent, mauris gravida rutrum
+              </p>
+            </div>
+          </div>
+          <a href="contact.html" class="rts-btn btn-primary mt--50"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- why chgoose us section end -->

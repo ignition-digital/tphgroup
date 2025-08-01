@@ -1,5 +1,5 @@
 {
-  "name": "proguard-oxelar",
+  "name": "tph-group",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "ejs": "^3.1.10",
     "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",

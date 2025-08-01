@@ -9,60 +9,61 @@ const ROOTS_URL = "";
 // Define the pages for HtmlWebpackPlugin
 const pages = [
   { name: "index", template: "./src/index.html" },
+  { name: "contact", template: "./src/contact.html" },
   { name: "404", template: "./src/404.html" },
-  { name: "contact-us", template: "./src/contact-us.html" },
+  { name: "about", template: "./src/about.html" },
   { name: "join-us", template: "./src/join-us.html" },
-  { name: "clients", template: "./src/clients.html" },
-  { name: "services", template: "./src/services.html" },
-  { name: "static-guard", template: "./src/static-guard.html" },
-  { name: "armed-guard", template: "./src/armed-guard.html" },
-  { name: "vip-bodyguard", template: "./src/vip-bodyguard.html" },
-  { name: "event-crowd-control", template: "./src/event-crowd-control.html" },
-  {
-    name: "security-escort-service",
-    template: "./src/security-escort-service.html",
-  },
-  { name: "vehicle-patrol", template: "./src/vehicle-patrol.html" },
-  { name: "about-us", template: "./src/about-us.html" },
-  { name: "corporate-vision", template: "./src/corporate-vision.html" },
-  { name: "corporate-structure", template: "./src/corporate-structure.html" },
-  { name: "nbos", template: "./src/nbos.html" },
-  { name: "license", template: "./src/license.html" },
-  { name: "key-project", template: "./src/key-project.html" },
-  { name: "our-training", template: "./src/our-training.html" },
-  { name: "who-we-are", template: "./src/who-we-are.html" },
-  { name: "company-information", template: "./src/company-information.html" },
-  { name: "board-of-directors", template: "./src/board-of-directors.html" },
-  { name: "objective", template: "./src/objective.html" },
+  { name: "history", template: "./src/history.html" },
+  { name: "mission", template: "./src/mission.html" },
+  { name: "privacy-policy", template: "./src/privacy-policy.html" },
+  { name: "terms-of-condition", template: "./src/terms-of-condition.html" },
+  { name: "leadership", template: "./src/leadership.html" },
+  { name: "golden-era-world", template: "./src/golden-era-world.html" },
+  { name: "bright-future", template: "./src/bright-future.html" },
 ];
 
-const htmlPlugins = pages.map(
-  (page) =>
-    new HtmlWebpackPlugin({
-      filename: `${page.name}.html`,
-      template: page.template,
-      minify: {
-        removeOptionalTags: false,
-        collapseWhitespace: true,
-      },
-      inject: "head",
-      templateParameters: {
-        commonHead: fs
-          .readFileSync(
-            path.resolve(__dirname, "src", "components", "common-head.html"),
-            "utf-8"
-          )
-          .replace(/<%= roots %>/g, ROOTS_URL),
-        roots: ROOTS_URL,
-      },
-      navbar: fs
-        .readFileSync("./src/components/navbar.html", "utf8")
-        .replace(/<%= roots %>/g, ROOTS_URL),
-      footer: fs
-        .readFileSync("./src/components/footer.html", "utf8")
-        .replace(/<%= roots %>/g, ROOTS_URL),
-    })
-);
+const ejs = require("ejs");
+
+const layoutTemplate = path.resolve(__dirname, "src/components/layout.html");
+
+const htmlPlugins = pages.map((page) => {
+  const rawBodyContent = fs.readFileSync(page.template, "utf-8");
+
+  const navbar = fs
+    .readFileSync(
+      path.resolve(__dirname, "src/components/navbar.html"),
+      "utf-8"
+    )
+    .replace(/<%= roots %>/g, ROOTS_URL);
+
+  const footer = fs
+    .readFileSync(
+      path.resolve(__dirname, "src/components/footer.html"),
+      "utf-8"
+    )
+    .replace(/<%= roots %>/g, ROOTS_URL);
+
+  const renderedHtml = ejs.render(
+    fs.readFileSync(layoutTemplate, "utf-8"),
+    {
+      navbar,
+      footer,
+      main: rawBodyContent,
+      roots: ROOTS_URL,
+    },
+    { rmWhitespace: true }
+  );
+
+  return new HtmlWebpackPlugin({
+    filename: `${page.name}.html`,
+    inject: false,
+    templateContent: renderedHtml, // ✅ use rendered result
+    minify: {
+      collapseWhitespace: true,
+      removeOptionalTags: false,
+    },
+  });
+});
 
 module.exports = {
   entry: "./src/index.js",
@@ -89,6 +90,9 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "assets", to: "assets" },
+        { from: "css2", to: "css2.css" },
+        { from: "s", to: "s" },
+        { from: "golfy", to: "golfy" },
         { from: "src/manifest.json", to: "manifest.json" },
         { from: "src/service-worker.js", to: "service-worker.js" },
       ],

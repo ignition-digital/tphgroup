@@ -1,12 +1,12 @@
 {
-  "name": "Proguard Security Services",
-  "short_name": "Proguard Security Services",
+  "name": "TPH Group",
+  "short_name": "TPH Group",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "scope": ".",
-  "description": "In the heart of Malaysia, a passionate dreamer founded Sky Sparks Fireworks with a vision to ignite joy and unite people through the magic of fireworks.",
+  "description": "In the heart of Malaysia, a passionate dreamer founded TPH Group with a vision to ignite joy and unite people through the magic of fireworks.",
   "prefer_related_applications": true,
   "icons": [
     {
