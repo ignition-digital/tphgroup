@@ -91,6 +91,7 @@ module.exports = {
       patterns: [
         { from: "assets", to: "assets" },
         { from: "css2", to: "css2.css" },
+        { from: "CNAME.txt", to: "CNAME.txt" },
         { from: "s", to: "s" },
         { from: "golfy", to: "golfy" },
         { from: "src/manifest.json", to: "manifest.json" },
