@@ -30,4 +30,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
 
       - name: Build and deploy to GitHub Pages
-        run: npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx gh-pages -d dist -u "github-actions[bot] <github-actions[bot]@users.noreply.github.com>" -r "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}"
