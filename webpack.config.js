@@ -13,13 +13,10 @@ const pages = [
   { name: "404", template: "./src/404.html" },
   { name: "about", template: "./src/about.html" },
   { name: "mission", template: "./src/mission.html" },
-  // { name: "join-us", template: "./src/join-us.html" },
-  // { name: "history", template: "./src/history.html" },
-  // { name: "leadership", template: "./src/leadership.html" },
   { name: "privacy-policy", template: "./src/privacy-policy.html" },
   { name: "terms-of-condition", template: "./src/terms-of-condition.html" },
   { name: "golden-era-world", template: "./src/golden-era-world.html" },
-  { name: "bright-future", template: "./src/bright-future.html" },
+  { name: "bright-station", template: "./src/bright-station.html" },
 ];
 
 const ejs = require("ejs");
