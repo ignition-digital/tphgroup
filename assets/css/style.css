@@ -17444,9 +17444,10 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
   color: #fff;
 }
 
-/* .footer-8-area-bg {
-  background-image: url(../images/footer/05.webp);
-} */
+.footer-8-area-bg {
+  /* background-image: url(../images/footer/05.webp); */
+  background-color: #20282d;
+}
 
 .footer-logo-area-left-8 {
   text-align: left;
