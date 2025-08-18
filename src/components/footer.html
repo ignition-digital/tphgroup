@@ -1,4 +1,4 @@
-<div class="footer-8-area-bg bg_image pt--65" id="site-footer">
+<div class="footer-8-area-bg bg_image pt--65">
   <div class="container pb--65">
     <div class="row">
       <div class="col-lg-3">
@@ -252,24 +252,6 @@
   if (!isRoot) {
     const header = document.getElementById("site-header");
 
-    header.style.backgroundColor = "#20282d";
-  }
-
-  const isAbout = location.pathname === "/about.html";
-  if (isAbout) {
-    const header = document.getElementById("site-header");
-    const footer = document.getElementById("site-footer");
-
     header.style.backgroundColor = "#8b0000";
-    footer.style.backgroundColor = "#8b0000";
-  }
-
-  const isMission = location.pathname === "/mission.html";
-  if (isMission) {
-    const header = document.getElementById("site-header");
-    const footer = document.getElementById("site-footer");
-
-    header.style.backgroundColor = "#d2042d";
-    footer.style.backgroundColor = "#d2042d";
   }
 </script>

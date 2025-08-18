@@ -6309,7 +6309,7 @@ Copyright (c) 2015 Daniel Eden
   z-index: 999;
   width: 100%;
   box-shadow: 0px 7px 18px rgba(24, 16, 16, 0.0509803922);
-  background: #20282d;
+  background: #8b0000;
 }
 
 .header-transparent-main-wrapper {
@@ -17444,9 +17444,10 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
   color: #fff;
 }
 
-/* .footer-8-area-bg {
-  background-image: url(../images/footer/05.webp);
-} */
+.footer-8-area-bg {
+  /* background-image: url(../images/footer/05.webp); */
+  background-color: #8b0000;
+}
 
 .footer-logo-area-left-8 {
   text-align: left;
@@ -17474,7 +17475,7 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background: #3e484e;
+  background: #e04700;
   transition: 0.3s;
 }
 .footer-logo-area-left-8 ul li a i {
@@ -17592,7 +17593,7 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
   display: flex;
   align-content: center;
   justify-content: center;
-  background: #3e484e;
+  background: #e04700;
   border-radius: 5px;
 }
 .footer-8-area-bg .footer-one-single-wized .signle-footer-contact-8 .icon i {
