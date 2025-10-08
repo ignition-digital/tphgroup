@@ -93,6 +93,8 @@ module.exports = {
         { from: "golfy", to: "golfy" },
         { from: "src/manifest.json", to: "manifest.json" },
         { from: "src/service-worker.js", to: "service-worker.js" },
+        { from: "src/robot.txt", to: "robot.txt" },
+        { from: "src/sitemap.xml", to: "sitemap.xml" },
       ],
     }),
   ],
